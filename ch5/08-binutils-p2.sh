@@ -15,7 +15,8 @@ RANLIB=$LFS_TGT-ranlib     \
 ../binutils-2.23.1/configure \
     --prefix=/tools        \
     --disable-nls          \
-    --with-lib-path=/tools/lib
+    --with-lib-path=/tools/lib \
+    --with-sysroot # as per the errata
 
 make
 make install
