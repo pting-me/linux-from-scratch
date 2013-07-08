@@ -1,4 +1,5 @@
-apt-get install bison
-apt-get install gawk
-apt-get install gcc
-apt-get install make
+apt-get -y update
+apt-get -y install bison
+apt-get -y install gawk
+apt-get -y install gcc
+apt-get -y install make
