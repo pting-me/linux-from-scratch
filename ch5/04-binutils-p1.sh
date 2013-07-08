@@ -1,13 +1,15 @@
 #!/bin/bash
 
-# extract and change dir
+# extract
 cd $LFS/sources
 tar -xjf binutils-2.23.1.tar.bz2
 cd binutils-2.23.1
 
-# script from the book
+# create build dir
 mkdir -v ../binutils-build
 cd ../binutils-build
+
+# configure
 ../binutils-2.23.1/configure   \
     --prefix=/tools            \
     --with-sysroot=$LFS        \
@@ -15,6 +17,7 @@ cd ../binutils-build
     --target=$LFS_TGT          \
     --disable-nls              \
     --disable-werror
+
 make
 make install
 

@@ -5,8 +5,7 @@ cd $LFS/sources
 tar -xjf gcc-4.7.2.tar.bz2
 cd gcc-4.7.2
 
-# from the book
-# extract other files
+# extract dependencies
 tar -Jxf ../mpfr-3.1.1.tar.xz
 mv -v mpfr-3.1.1 mpfr
 tar -Jxf ../gmp-5.1.1.tar.xz
@@ -32,9 +31,11 @@ done
 sed -i '/k prot/agcc_cv_libc_provides_ssp=yes' gcc/configure
 sed -i 's/BUILD_INFO=info/BUILD_INFO=/' gcc/configure
 
+# create build dir
 mkdir -v ../gcc-build
 cd ../gcc-build
 
+# configure
 ../gcc-4.7.2/configure         \
     --target=$LFS_TGT          \
     --prefix=/tools            \
@@ -58,6 +59,8 @@ cd ../gcc-build
 
 make
 make install
+
+# libgcc dependency
 ln -sv libgcc.a `$LFS_TGT-gcc -print-libgcc-file-name | sed 's/libgcc/&_eh/'`
 
 # cleanup

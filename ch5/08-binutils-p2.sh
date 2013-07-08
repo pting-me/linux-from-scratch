@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# extract and change dir
+# extract
 cd $LFS/sources
 tar -xjf binutils-2.23.1.tar.bz2
 cd binutils-2.23.1
 
-# script from the book
+# create build directory
 mkdir -v ../binutils-build
 cd ../binutils-build
 
+# configure
 CC=$LFS_TGT-gcc            \
 AR=$LFS_TGT-ar             \
 RANLIB=$LFS_TGT-ranlib     \
@@ -21,6 +22,7 @@ RANLIB=$LFS_TGT-ranlib     \
 make
 make install
 
+# prepare linker
 make -C ld clean
 make -C ld LIB_PATH=/usr/lib:/lib
 cp -v ld/ld-new /tools/bin
