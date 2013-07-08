@@ -10,9 +10,9 @@ cat gcc/limitx.h gcc/glimits.h gcc/limity.h > \
   `dirname $($LFS_TGT-gcc -print-libgcc-file-name)`/include-fixed/limits.h
 
 # bootstrap flag for non x86 systems
-cp -v gcc/Makefile.in{,.tmp}
-sed 's/^T_CFLAGS =$/& -fomit-frame-pointer/' gcc/Makefile.in.tmp \
-  > gcc/Makefile.in
+#cp -v gcc/Makefile.in{,.tmp}
+#sed 's/^T_CFLAGS =$/& -fomit-frame-pointer/' gcc/Makefile.in.tmp \
+#  > gcc/Makefile.in
 
 # append files
 for file in \
