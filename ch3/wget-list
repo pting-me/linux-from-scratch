@@ -52,14 +52,14 @@ http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.tar.gz
 http://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.88dsf.tar.bz2
 http://ftp.gnu.org/gnu/tar/tar-1.26.tar.bz2
 http://prdownloads.sourceforge.net/tcl/tcl8.6.0-src.tar.gz
-http://www.iana.org//time-zones/repository/releases/tzdata2012j.tar.gz
+ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/7.3/tzdata2012j.tar.gz
 http://ftp.gnu.org/gnu/texinfo/texinfo-5.0.tar.xz
 http://www.freedesktop.org/software/systemd/systemd-197.tar.xz
 http://anduin.linuxfromscratch.org/sources/other/udev-lfs-197-2.tar.bz2
 http://www.kernel.org/pub/linux/utils/util-linux/v2.22/util-linux-2.22.2.tar.xz
 ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
 http://tukaani.org/xz/xz-5.0.4.tar.xz
-http://www.zlib.net/zlib-1.2.7.tar.bz2
+ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/7.3/zlib-1.2.7.tar.bz2
 http://www.linuxfromscratch.org/patches/lfs/7.3/bash-4.2-fixes-11.patch
 http://www.linuxfromscratch.org/patches/lfs/7.3/binutils-2.23.1-testsuite_fix-1.patch
 http://www.linuxfromscratch.org/patches/lfs/7.3/bzip2-1.0.6-install_docs-1.patch
