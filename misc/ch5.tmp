@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# extract
+cd $LFS/sources
+tar -{0}xf {1}
+cd {2}
+
+# cleanup
+cd ..
+rm -rf {2}
