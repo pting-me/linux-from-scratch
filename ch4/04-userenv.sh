@@ -16,4 +16,4 @@ PATH=/tools/bin:/bin:/usr/bin
 export LFS LC_ALL LFS_TGT PATH
 EOF
 
-source ~/.bash_profile
+echo "be sure to source ~/.bash_profile"
