@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export LFS=/mnt/lfs
-
 # mount file system
 mkdir -pv $LFS
 mount -v -t ext3 /dev/sda2 $LFS
